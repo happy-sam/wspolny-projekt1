@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900&subset=latin-ext');
+
+
+$green: #6fa40b;
+$lightgreen: #edf4e1;
+
+$lato: 'Lato', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;        
+    position: relative;
+    top: 0;    
+}
+
+a{
+    text-decoration: none;
+    padding: 0px;
+    }
+
+a:focus{  
+    outline: none;
+}
+
+.box3{
+    display: flex;    
+    align-items: center;
+    align-content: center;
+    height: 805px;
+    width: 100%;
+    background-color: #ffffff;    
+}
+
+.b3-container{
+    margin: 0 auto;
+    max-width: 1200px;    
+    background-color: #ffffff;
+    
+    .b3-box-topic{
+        text-align: center;
+        margin-bottom: 20px;
+
+        h5{
+            text-align: center;
+            color: #ffffff;
+            background-color: #000000;
+            font-family: $lato;
+            font-size: 12px;
+            line-height: 24px;
+            width: 120px;
+            height: 24px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .b3-the{
+            color: $green;
+            font-family: $raleway;
+            font-size: 48px;
+            line-height: 48px;
+            font-weight: 900;
+        }
+
+        .b3-story{
+            color: #000000;
+            font-family: $raleway;
+            font-size: 48px;
+            line-height: 48px;
+            font-weight: 900;
+        }
+
+        .b3-aboutus {
+            color: $green;
+            font-family: $raleway;
+            font-size: 48px;
+            line-height: 48px;
+            font-weight: 300;
+        }
+
+        p{
+            margin: 0 auto;
+            text-align: center;
+            color: #555555;
+            font-family: $lato;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            max-width: 630px;
+        }
+    }
+    
+    .b3-box-images{
+        position: relative;
+        top: 0;        
+        
+        .b3-box-lightgreen{
+            position: relative;
+            left: 80px;
+            width: 465px;
+            height: 480px;
+            background-color: $lightgreen;
+        }
+
+        .b3-box-darkgreen {            
+            position: absolute;
+            top: 60px;
+            right: 0px;
+            width: 570px;
+            height: 360px;
+            background-color: $green;
+        }            
+        
+    }
+    
+    .b3-box-description{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        padding-left: 50px;
+        height: 480px;        
+        max-width: 570px;
+        
+        h4{            
+            text-align: left;
+            font-family: $raleway;
+            color: $green;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        
+        .italic{
+            color: #000000;
+            font-family: $raleway;
+            font-size: 14px;
+            line-height: 24px;
+            font-style: italic;
+        }
+        
+        .regular {
+            color: #666366;
+            font-size: 16px;
+            font-family: $lato;
+            line-height: 24px;
+	        font-weight: 400;
+        }
+    }
+}
+
+
+
+
+
