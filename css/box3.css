@@ -17,9 +17,8 @@ a:focus {
   outline: none; }
 
 .box3 {
-  display: flex;
-  align-items: center;
-  align-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
   height: 805px;
   width: 100%;
   background-color: #ffffff; }
@@ -90,7 +89,11 @@ a:focus {
           max-height: 360px;
           width: 100%; }
     .box3 .b3-container .b3-box-description {
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
       flex-direction: column;
       justify-content: center;
       padding-left: 50px;
@@ -131,6 +134,8 @@ a:focus {
           height: 100%;
           width: 40vw; }
         .box3 .b3-container .b3-box-images .b3-box-darkgreen {
+          display: -ms-flexbox;
+          display: -webkit-flex;
           display: flex;
           align-items: center; } }
 @media screen and (max-width: 767px) {
@@ -148,6 +153,8 @@ a:focus {
       .box3 .b3-container .b3-box-images {
         position: relative;
         top: 0;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         justify-content: center;
         min-height: 250px;
