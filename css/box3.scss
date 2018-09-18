@@ -252,8 +252,7 @@ a:focus{
                     img{               
                         margin: 0 auto;                        
                     }
-                }
-                
+                }                
             }
 
             .b3-box-description{                
@@ -265,7 +264,6 @@ a:focus{
         }    
     }    
 }
-
 
 @media screen and (max-width: 575px){    
 
@@ -284,13 +282,8 @@ a:focus{
             .b3-box-images{                
                 min-height: 100px;
                 max-height: 380px;
-//                display: flex;
-//                justify-content: center;
-//                align-items: center;
                 margin-bottom: 0;
                 padding: 0;
-                
-                
 
                 .b3-box-lightgreen{
                     min-height: 100px;
