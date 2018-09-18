@@ -19,6 +19,16 @@ a:focus {
 .box3 {
   padding-bottom: 50px;
   padding-top: 50px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  display: block;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-content: center;
   height: 805px;
   width: 100%;
   background-color: #ffffff; }
@@ -69,7 +79,8 @@ a:focus {
         max-width: 630px; }
     .box3 .b3-container .b3-box-images {
       position: relative;
-      top: 0; }
+      top: 0;
+      width: 100%; }
       .box3 .b3-container .b3-box-images .b3-box-lightgreen {
         position: relative;
         left: 90px;
@@ -77,13 +88,16 @@ a:focus {
         max-width: 465px;
         max-height: 480px;
         height: 100%;
-        background-color: #edf4e1; }
+        background-color: #edf4e1;
+        display: block;
+        min-height: 400px; }
       .box3 .b3-container .b3-box-images .b3-box-darkgreen {
         position: absolute;
         top: 12.5%;
         bottom: 12.5%;
         max-width: 570px;
-        max-height: 360px; }
+        max-height: 360px;
+        width: 100%; }
         .box3 .b3-container .b3-box-images .b3-box-darkgreen img {
           max-width: 570px;
           max-height: 360px;
@@ -98,7 +112,8 @@ a:focus {
       justify-content: center;
       padding-left: 50px;
       height: 480px;
-      max-width: 570px; }
+      min-height: 400px;
+      width: 100%; }
       .box3 .b3-container .b3-box-description h4 {
         text-align: left;
         font-family: "Raleway", sans-serif;
@@ -158,9 +173,13 @@ a:focus {
         display: flex;
         justify-content: center;
         min-height: 250px;
-        height: 400px; }
+        height: 400px;
+        max-margin: 0 auto;
+        width: 100%;
+        min-width: 320px; }
         .box3 .b3-container .b3-box-images .b3-box-lightgreen {
-          width: 100%; }
+          width: 100%;
+          float: none; }
       .box3 .b3-container .b3-box-description {
         padding-left: 35px;
         padding-right: 35px;

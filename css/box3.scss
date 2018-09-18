@@ -32,21 +32,21 @@ a:focus{
 .box3{    
     padding-bottom: 50px;
     padding-top: 50px;
-//    display: -webkit-flex;
-//    display: -moz-flex;
-//    display: -ms-flex;
-//    display: -o-flex;
-//    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 //    -webkit-flex-direction: column;
 //    -moz-flex-direction: column;
 //    -ms-flex-direction: column;
 //    -o-flex-direction: column;
 //    flex-direction: column;
-//    display: block;    
-//    -webkit-align-items: center;
-//    -ms-flex-align: center;
-//    align-items: center;
-//    align-content: center;
+    display: block;    
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    align-content: center;
     height: 805px;
     width: 100%;
     background-color: #ffffff;    
@@ -112,6 +112,8 @@ a:focus{
         .b3-box-images{
             position: relative;
             top: 0;        
+            width: 100%;
+//            min-height: 480px;            
 
             .b3-box-lightgreen{
                 position: relative;
@@ -121,6 +123,8 @@ a:focus{
                 max-height: 480px;                
                 height: 100%;
                 background-color: $lightgreen;
+                display: block;
+                min-height: 400px;
             }
 
             .b3-box-darkgreen {            
@@ -129,6 +133,8 @@ a:focus{
                 bottom: 12.5%;
                 max-width: 570px;
                 max-height: 360px;
+                width: 100%;
+//                height: 100%;
 
                 img{                    
                     max-width: 570px;
@@ -145,11 +151,12 @@ a:focus{
             -ms-flex-direction: column;
             -webkit-flex-direction: column;            
             flex-direction: column;             
-            justify-content: center;
-            
+            justify-content: center;            
             padding-left: 50px;
             height: 480px;        
-            max-width: 570px;
+//            max-width: 500px;
+            min-height: 400px;
+            width: 100%;
 
             h4{            
                 text-align: left;
@@ -199,11 +206,11 @@ a:focus{
                     width: 40vw;
                 }
 
-                .b3-box-darkgreen {                         
+                .b3-box-darkgreen {                                             
                     display: -ms-flexbox;
                     display: -webkit-flex;
                     display: flex;
-                    align-items: center;                    
+                    align-items: center; 
                 }            
             }            
         }
@@ -236,9 +243,20 @@ a:focus{
                 justify-content: center;
                 min-height: 250px;
                 height: 400px;
+                max-margin: 0 auto;
+                width: 100%;
+                min-width: 320px;
+                                
 
                 .b3-box-lightgreen{
-                    width: 100%;                    
+                    width: 100%;    
+                    float: none;      
+                }
+                
+                .b3-box-darkgreen {                    
+//	                width: 100%;  
+                    
+                    
                 }
             }
 
