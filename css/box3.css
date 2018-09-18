@@ -168,18 +168,24 @@ a:focus {
       .box3 .b3-container .b3-box-images {
         position: relative;
         top: 0;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        justify-content: center;
         min-height: 250px;
         height: 400px;
-        max-margin: 0 auto;
+        margin: 0 auto;
         width: 100%;
-        min-width: 320px; }
+        min-width: 320px;
+        max-width: 767px; }
         .box3 .b3-container .b3-box-images .b3-box-lightgreen {
           width: 100%;
-          float: none; }
+          left: 0;
+          float: none;
+          margin: 0 auto; }
+        .box3 .b3-container .b3-box-images .b3-box-darkgreen {
+          width: 100%;
+          max-width: 767px;
+          left: 0;
+          margin: 0 auto; }
+          .box3 .b3-container .b3-box-images .b3-box-darkgreen img {
+            margin: 0 auto; }
       .box3 .b3-container .b3-box-description {
         padding-left: 35px;
         padding-right: 35px;
@@ -196,9 +202,6 @@ a:focus {
     .box3 .b3-container .b3-box-images {
       min-height: 100px;
       max-height: 380px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin-bottom: 0;
       padding: 0; }
       .box3 .b3-container .b3-box-images .b3-box-lightgreen {
@@ -208,7 +211,7 @@ a:focus {
       padding: 50px 35px;
       min-height: 350px;
       height: 100%;
-      max-height: 480px;
+      max-height: 580px;
       margin: 0 auto; } }
 
 /*# sourceMappingURL=box3.css.map */
