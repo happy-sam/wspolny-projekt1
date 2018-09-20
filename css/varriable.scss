@@ -1,7 +1,4 @@
 %image{
-	background-image:url(../img/foto1.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
 	width: 100%;
 	-webkit-filter: blur(2px) brightness(0.7);
 	-moz-filter: blur(2px) brightness(0.7);
@@ -51,6 +48,26 @@
 		font-family: 'Lato';
 		line-height: initial;
 		font-weight: 600;
+}
+%contact{
+	margin-top: 23px;
+	padding-top:9px;
+	padding-left: 0;
+	padding-right: 0;
+}
+%socialHeaderIcon{
+	font-size: 20px;
+	color: #ffffff;
+	height: 20px;
+	width: 15px;
+	transition:0.7s;
+	cursor: pointer;
+}
+%iconHover{
+		transform: rotate(360deg);
+  		-webkit-transform: rotate(360deg);
+  		-moz-transform: rotate(360deg);
+  		color:#6fa40b;
 }
 
 $standard:15px;
