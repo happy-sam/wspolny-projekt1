@@ -50,7 +50,7 @@
 		font-weight: 600;
 }
 %contact{
-	margin-top: 23px;
+	margin-top: 1.2vw;
 	padding-top:9px;
 	padding-left: 0;
 	padding-right: 0;
@@ -74,3 +74,22 @@ $standard:15px;
 $whiteColor: #ffffff;
 $greenColor:#6fa40b;
 $blackColor:#000000;
+
+$breakpoints: (
+  "large":1199px,
+  "medium": 991px,
+  "small": 767px,
+  "extra-small": 575px
+  );
+
+  @mixin mq($width,$type:max){
+    @if map_has_key($breakpoints, $width){
+      $width: map_get($breakpoints,$width);
+      @if type ==max{
+        $width: $width - 1px;
+      }
+      @media only screen and (#{$type}-width: $width){
+        @content;
+      }
+      }
+    }

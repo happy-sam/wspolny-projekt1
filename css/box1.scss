@@ -29,12 +29,16 @@
 					font-size: 25px;
 					text-transform: uppercase;
 					padding: 0;
+					@include mq('medium'){
+    					font-size:16px;
+    					padding: 0 0 0 20px;
+    				}
 					h1{
 						color: $whiteColor;
 						font-family: 'Raleway';
 						float:left;
 						font-weight: 900;
-						margin-top:23px;
+						margin-top:1.2vw;
 						padding-top: 0;
 						margin-bottom: 0;
 						#green {
@@ -54,16 +58,32 @@
 						letter-spacing: 1px;
 						font-weight: 600;
 						line-height: 0px;
+						@include mq('medium'){
+    						font-size: 8.5px;
+    					}
 					}
 				}
 				.adressContainer{
 					@extend %contact;
+					@include mq('medium'){
+    							padding-top:0px;
+    						}
 					#adress{
 						padding-top: 0px;
 						margin-left:13vw;
+						@include mq('medium'){
+    						margin-left:0px;
+    					}
 						.mapMarker{
 							@extend %marker;
 							margin-left:0%;
+							@include mq('small'){
+    						line-height: 20px;
+    						font-size: 15px;
+    						width:20px;
+    						height: auto;
+    						margin-top:10px;
+    						}
 						}
 						ul{
 							margin:0;
@@ -72,8 +92,22 @@
 							li{
 								@extend %liDiscription;
 								margin-left:16%;
+								@include mq('medium'){
+    								margin-left:20%;
+    								font-size: 12px;
+    								}
+    							@include mq('small'){
+    								margin-left:13%;
+    								}
 								&:last-child{
-								text-transform: uppercase;;
+								text-transform: uppercase;
+								@include mq('medium'){
+    								margin-left:20%;
+    								font-size: 12px;
+    								}
+    							@include mq('small'){
+    								margin-left:13%;
+    								}
 								}			
 							}
 						}
@@ -81,31 +115,135 @@
 				}
 				.phoneContainer{
 					@extend %contact;
+					@include mq('medium'){
+    					padding-top:0%;
+    					font-size: 12px;
+    						}
 					#phone{
 						padding-top: 0px;
 						margin:0;
+						@include mq('small'){
+    						margin:0 0 0 -20px;
+    						}
 						.phoneMarker{
 							@extend %marker;
 							font-size:20px;
 							margin-left:0%;
 							font-weight: 700;
+							@include mq('small'){
+    							line-height: 20px;
+    							font-size: 15px;
+    							width:20px;
+    							height: auto;
+    							margin-top:10px;
+    						}
 						}
 						ul {
 							padding: 0;
 							margin: 0;
 							list-style: none;
+    							
 							li{
 								margin-left:20%;
 								a{
 									@extend %liDiscription;
 									text-decoration: none;
 									transition:0.5s;	
+									@include mq('medium'){
+    									font-size: 12px;
+    								}
+    								@include mq('small'){
+    									margin:0 0 0 -18px;
+    									}
 									&:hover{
 									color:$greenColor;
 									transition:0.5s;
 									}	
 								}
 							}								
+						}
+						.mobileMenu{
+							display: none;
+							@include mq('small'){
+    							display:block;
+    							width:30px;
+    							position:absolute;;
+    							top:5px;
+    							right:20px;
+    							ul{
+    								margin:0;
+    								padding: 0;
+    								li{
+    									&:hover > ul> li{
+    										
+    											opacity:1;
+    											transition:0.5s;
+    											margin-top: 0px;
+    											width:200px;
+    											margin-left: -170px;
+
+    										}
+    										&:hover .hamburger{
+    											color:$blackColor;
+    											transition:0.5s;
+    										}
+    									.hamburger{
+    										color:$whiteColor;
+    										font-size:30px;
+    										display:block;
+    										margin-left: auto;
+    										margin-right: auto;
+    										transition:0.5s;
+    										cursor:pointer;
+
+    									}
+    									ul{
+    										
+    										li{
+    											display:block;
+    											opacity:0;
+    											margin-left:0px;
+    											width:0px;
+    											text-align: center;
+    											position: relative;
+    											border-radius: 10px;
+    											z-index: 3;
+    											margin-top: -36px;
+    											transition:0.5s;
+    											&:nth-child(7){
+    												background:black;
+    											}
+    											a{
+    												display: block;
+    												width:100%;
+    												font-size: 15px;
+    												font-weight: 500;
+    												text-transform: uppercase;
+    												margin:0;
+    												padding-top:3%;
+    												padding-bottom:3%;
+    												border-style: solid;
+    												border-radius: 10px;
+    												border-color:$greenColor;
+    												background:$greenColor;
+    												&:hover{
+    													color:$whiteColor;
+    													border-style: solid;
+    													border-color:$blackColor;
+    													border-radius: 10px;
+    													-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+														-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+														box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    												}
+    											}
+
+    										}
+    									}
+    									
+    								}
+    							}
+    						}
+
 						}
 					}
 				}
@@ -115,6 +253,12 @@
 					justify-content:space-between;
 					max-width: 11%;
 					margin-left:2vw;
+					@include mq('medium'){
+    					margin-top:1.2vw;
+    				}
+    				@include mq('small'){
+    					display:none;
+    				}
 					.facebook{
 						@extend %socialHeaderIcon;
 						&:hover{
@@ -142,11 +286,26 @@
 			position: absolute;
 			z-index: 2;
 			top:106px;
+			@include mq('large'){
+    			top:90px;
+    		}
+    		@include mq('medium'){
+    			top:69px;
+    		}
+    		@include mq('small'){
+    			display:none;
+    		}
 			nav{
 				width:1200px;
 				height: 60px;
 				margin-left: auto;
 				margin-right: auto;
+				@include mq('large'){
+    			height:45px;
+    			}
+    			@include mq('medium'){
+    			height:33px;
+    			}
 				.linksHeader{
 					background: $greenColor; 
 					height: 100%;
@@ -161,16 +320,31 @@
 							margin-left: 23px;
 							margin-right: 20px;
 							padding-top: 15px;
+							@include mq('large'){
+    							padding-top:9px;
+    						}
+    						@include mq('medium'){
+    						padding-top:3px;
+    						margin-right:10px;
+    						}
 							a{
 							color:$whiteColor;
 							text-transform: uppercase;
-							font-size: 'Raleway';
+							font-family: 'Raleway';
+							font-size:$standard;
 							font-weight: 600;
 							width: 100%;
-							padding-top: 17px;
+							padding-top: 21px;
 							padding-bottom: 17px;
 							background: linear-gradient(currentColor, currentColor) top / 0 .2em no-repeat;
 							transition: 0.5s;
+							@include mq('large'){
+    							padding-top:13.5px;
+    						}
+    						@include mq('medium'){
+    						padding-top:7.5px;
+    						padding-bottom:9px;
+    						}
 							&:hover{
 								color:$blackColor;
 								background-size: 100% .2em;
@@ -198,7 +372,13 @@
 						margin-top: 16px;
 						margin-left: 24.5px;
 						margin-right: 16.5px;
-						transition:0.5s
+						transition:0.5s;
+						@include mq('large'){
+    						margin-top:11px;
+    					}
+    					@include mq('medium'){
+    					margin-top:5px;
+    					}
 					}
 					&:hover{
 						background: $whiteColor;
@@ -228,7 +408,7 @@
 			position: absolute;
 			left:0;
 			top:15vw;
-			z-index: 2;
+			z-index: 1;
 			.headerDiscription{
 				text-align: center;
 				h2{
@@ -236,19 +416,20 @@
 					margin-left: auto;
 					margin-right: auto;
 					color:$whiteColor;
-					font-size:48px;
+					font-size:2.55vw;
 					font-family: 'Lato';
 					font-weight: 300;
 					background:$blackColor;
 					padding-bottom: 7px;
+					@include mq('small'){
+    						width:70%;
+    						font-size: 4vw;
+    					}
 					#greenUpperWord{
 						text-transform: uppercase;
 						color:$greenColor;
 						font-weight: 700;
-					}
-					.greenWord{
-						color:$greenColor;
-						font-weight: 700;
+						
 					}
 				}
 				h3{
@@ -257,11 +438,19 @@
 					margin-left: auto;
 					margin-right: auto;
 					color:$whiteColor;
-					font-size:48px;
+					font-size:2.55vw;
 					font-family: 'Lato';
 					font-weight: 300;
 					background:$blackColor;
 					padding-bottom: 7px;
+					@include mq('small'){
+    						width:60%;
+    						font-size: 4vw;
+    					}
+					.greenWord{
+						color:$greenColor;
+						font-weight: 700;
+					}
 				}
 				#discriptionsScrooling{
 					p{
@@ -272,24 +461,49 @@
 					margin-right: auto;
 					height:45px;
 					overflow:hidden;
+					
+					@include mq('medium'){
+    					width:50%;
+    				}
+    				@include mq('small'){
+    						width:80%;
+    						overflow:none;
+    						height: auto;
+    					}
 					&:hover{
 						overflow:auto;
 					}
 				}
 				#mouseContainer{
-					margin-top:5%;
+					margin-top:1vw;
+					@include mq('small'){
+    						display:none;
+    					}
 					img{
 						width:3%;
 					}
 				}
 				#mouseDot{
-					width:3%;
+					width:55px;
 					margin-left: auto;
 					margin-right: auto;
+					@include mq('medium'){
+    				width:67px;
+    					@include mq('small'){
+    						display:none;
+    					}
+    				}
 					ul{
 						text-align: center;
+						@include mq('medium'){
+    						margin-bottom:0px;
+    					}
 						li{
 							color:$whiteColor;
+							line-height: 1vw;
+							@include mq('medium'){
+    						font-size:8px;
+    						}
 						}
 					}
 					p{
@@ -299,6 +513,7 @@
 						font-family: 'Raleway';
 						text-transform: uppercase;
 						font-weight: 400;
+						margin-left: -10px;
 						.scrool{
 							display: inline-block;
 							float:right;
@@ -320,6 +535,10 @@
 				-o-filter: blur(2px) brightness(0.7);
 				-ms-filter: blur(2px) brightness(0.7);
 				filter: blur(2px) brightness(0.7);
+				@include mq('small'){
+  					width: 150%;
+  					margin-left: -23%;
+    									}
 			}
 		}
 	}
