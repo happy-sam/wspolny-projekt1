@@ -1,0 +1,59 @@
+%image{
+	background-image:url(../img/foto1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	-webkit-filter: blur(2px) brightness(0.7);
+	-moz-filter: blur(2px) brightness(0.7);
+	-o-filter: blur(2px) brightness(0.7);
+	-ms-filter: blur(2px) brightness(0.7);
+	filter: blur(2px) brightness(0.7);
+}
+%center {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+%mirrorText{
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+%iconBackground{
+	display:block;
+	width:39px;
+	height:39px;
+	background:#ffffff;
+	border-radius:100%;	
+	float:left;
+	margin-top: 12px;
+	margin-right:4px;
+	text-align: center;
+	padding-top: 2%;
+}
+%marker {
+	text-align: center;
+	line-height: 33px;
+	color:#6fa40b;
+	font-size: 17px;
+	background:#ffffff;
+	border-radius:100%;
+	width:35px;
+	height:35px;
+	float:left;
+}
+%liDiscription{
+		color:#ffffff;
+		font-size: 15px;
+		font-family: 'Lato';
+		line-height: initial;
+		font-weight: 600;
+}
+
+$standard:15px;
+$whiteColor: #ffffff;
+$greenColor:#6fa40b;
+$blackColor:#000000;

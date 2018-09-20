@@ -1,0 +1,220 @@
+@import 'varriable';
+.nopadding {
+	padding:0;
+}
+.nomargin{
+	margin:0;
+}
+.clearFX{
+	float:none;
+	clear:both;
+}
+header{
+	
+	height:768px;
+}
+.headerImage{
+	@extend %image;
+	height:100%;
+}
+.headerTopContainer{
+	width:100%;
+	display:flex;
+	justify-content: center;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+}
+.headerTop{
+	width: 1200px;
+	height:169px;
+}
+.logoContainer{
+	font-size: 25px;
+	text-transform: uppercase;
+	padding: 0;
+	h1{
+		color: $whiteColor;
+		font-family: 'Raleway';
+		float:left;
+		font-weight: 900;
+		margin-top:23px;
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+	h2{
+		color:$whiteColor;
+		margin-left:0;
+		margin-top:0;
+		font-size:$standard;
+		letter-spacing: 1px;
+		font-weight: 600;
+		line-height: 0px;
+
+	}
+}
+#green{
+	color:$greenColor;
+	float:left;
+}
+#black{
+	color:$blackColor;
+	@extend %mirrorText;
+	float:left;
+}
+.adressContainer{
+	margin-top: 23px;
+	padding-top:9px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.markAdress{
+@extend %iconBackground;
+}
+.mapMarker{
+	@extend %marker;
+	margin-left:0%;
+}
+#adress{
+	list-style: none;
+	padding-top: 0px;
+	margin-left:13vw;
+	li{
+		@extend %liDiscription;
+		margin-left:16%;
+		&:last-child{
+		text-transform: uppercase;
+		}
+	}
+}
+.phoneMarker{
+	@extend %marker;
+	font-size:20px;
+	margin-left:0%;
+	font-weight: 700;
+
+}
+#phone{
+	list-style: none;
+	padding-top: 0px;
+	margin:0;
+	li{
+		margin-left:20%;
+		a{
+			@extend %liDiscription;
+			text-decoration: none;
+			transition:0.5s;	
+			&:hover{
+				color:$greenColor;
+				transition:0.5s;
+			}	
+		}
+	}
+}
+.social{
+	margin-top:34px;
+	display: flex;
+	justify-content:space-between;
+	max-width: 11%;
+	margin-left:2vw;
+
+}
+.facebook, .twitter, .instagram{
+	font-size: 20px;
+	color: $whiteColor;
+	height: 20px;
+	width: 15px;
+	transition:0.7s;
+	cursor: pointer;
+	&:hover{
+		transform: rotate(360deg);
+  		-webkit-transform: rotate(360deg);
+  		-moz-transform: rotate(360deg);
+  		color:$greenColor;
+	}
+}
+.navContainer {
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	z-index: 2;
+	top:106px;
+
+}
+.links{
+	background: $greenColor; 
+	height: 100%;
+	float: left;
+}
+nav{
+	width:1200px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+
+	li{
+		list-style: none;
+		float:left;
+		margin-left: 23px;
+		margin-right: 20px;
+		padding-top: 15px;
+		a{
+		color:$whiteColor;
+		text-transform: uppercase;
+		font-size: 'Raleway';
+		font-weight: 600;
+		width: 100%;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		background: linear-gradient(currentColor, currentColor) top / 0 .2em no-repeat;
+		transition: 0.5s;
+		&:hover{
+			color:$blackColor;
+			background-size: 100% .2em;
+			text-decoration: none;
+
+			}
+		}
+	}
+}
+.quotePart{
+	background: $blackColor;
+	float:right;
+	height: 100%;
+	transition:0.5s;
+	cursor: pointer;
+	&:hover{
+		background: $whiteColor;
+		transition:0.5s;
+	}
+	&:hover span, &:hover .talk {
+		color:$blackColor;
+		transition:0.5s;
+		transform: rotate(360deg);
+  		-webkit-transform: rotate(360deg);
+  		-moz-transform: rotate(360deg);
+	}
+	span{
+		color:$whiteColor;
+		text-transform: uppercase;;
+		font-family: 'Raleway';
+		font-weight: 600;
+		transition:0.5s;
+	}
+}
+.talk {
+	width:23px;
+	height: 23px;
+	border-radius:100%;
+	background:$whiteColor;
+	text-align: center;
+	font-size: 13px;
+	color:$greenColor;
+	padding-top: 5px;
+	margin-top: 16px;
+	margin-left: 24.5px;
+	margin-right: 16.5px;
+	transition:0.5s;
+
+}
