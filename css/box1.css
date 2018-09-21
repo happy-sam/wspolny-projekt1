@@ -137,6 +137,11 @@
     margin-left: 0px;
   }
 }
+@media only screen and (max-width: 575px) {
+  .box1 header .headerTopContainer .headerTop .adressContainer #adress {
+    display: none;
+  }
+}
 .box1 header .headerTopContainer .headerTop .adressContainer #adress .mapMarker {
   margin-left: 0%;
 }
@@ -202,6 +207,11 @@
   margin-left: 0%;
   font-weight: 700;
 }
+@media only screen and (max-width: 575px) {
+  .box1 header .headerTopContainer .headerTop .phoneContainer #phone .phoneMarker {
+    display: none;
+  }
+}
 @media only screen and (max-width: 767px) {
   .box1 header .headerTopContainer .headerTop .phoneContainer #phone .phoneMarker {
     line-height: 20px;
@@ -222,6 +232,11 @@
 .box1 header .headerTopContainer .headerTop .phoneContainer #phone ul li a {
   text-decoration: none;
   transition: 0.5s;
+}
+@media only screen and (max-width: 575px) {
+  .box1 header .headerTopContainer .headerTop .phoneContainer #phone ul li a {
+    display: none;
+  }
 }
 @media only screen and (max-width: 991px) {
   .box1 header .headerTopContainer .headerTop .phoneContainer #phone ul li a {
@@ -258,6 +273,7 @@
     margin-top: 0px;
     width: 200px;
     margin-left: -170px;
+    margin-top: 10%;
   }
   .box1 header .headerTopContainer .headerTop .phoneContainer #phone .mobileMenu ul li:hover .hamburger {
     color: #000000;
@@ -287,6 +303,13 @@
   .box1 header .headerTopContainer .headerTop .phoneContainer #phone .mobileMenu ul li ul li:nth-child(7) {
     background: black;
   }
+  .box1 header .headerTopContainer .headerTop .phoneContainer #phone .mobileMenu ul li ul li #talkContainer {
+    background: #000000;
+  }
+  .box1 header .headerTopContainer .headerTop .phoneContainer #phone .mobileMenu ul li ul li #talkContainer:hover {
+    background: #ffffff;
+    color: #000000;
+  }
   .box1 header .headerTopContainer .headerTop .phoneContainer #phone .mobileMenu ul li ul li a {
     display: block;
     width: 100%;
@@ -299,7 +322,9 @@
     border-style: solid;
     border-radius: 10px;
     border-color: #6fa40b;
-    background: #6fa40b;
+    background: -moz-linear-gradient(top, #6fa40b 0%, #6fa40b 100%);
+    background: -webkit-linear-gradient(top, #6fa40b 0%, #6fa40b 100%);
+    background: linear-gradient(to bottom, #6fa40b 0%, #6fa40b 100%);
   }
   .box1 header .headerTopContainer .headerTop .phoneContainer #phone .mobileMenu ul li ul li a:hover {
     color: #ffffff;
@@ -309,6 +334,9 @@
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    background: -webkit-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
   }
 }
 .box1 header .headerTopContainer .headerTop .socialHeader {
@@ -320,6 +348,7 @@
 }
 @media only screen and (max-width: 991px) {
   .box1 header .headerTopContainer .headerTop .socialHeader {
+    display: flex;
     margin-top: 1.2vw;
   }
 }
@@ -337,12 +366,12 @@
 }
 @media only screen and (max-width: 1199px) {
   .box1 header .navContainer {
-    top: 90px;
+    top: 110px;
   }
 }
 @media only screen and (max-width: 991px) {
   .box1 header .navContainer {
-    top: 69px;
+    top: 90px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -359,11 +388,6 @@
 @media only screen and (max-width: 1199px) {
   .box1 header .navContainer nav {
     height: 45px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .box1 header .navContainer nav {
-    height: 33px;
   }
 }
 .box1 header .navContainer nav .linksHeader {
@@ -390,7 +414,6 @@
 }
 @media only screen and (max-width: 991px) {
   .box1 header .navContainer nav .linksHeader ul li {
-    padding-top: 3px;
     margin-right: 10px;
   }
 }
@@ -409,12 +432,6 @@
 @media only screen and (max-width: 1199px) {
   .box1 header .navContainer nav .linksHeader ul li a {
     padding-top: 13.5px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .box1 header .navContainer nav .linksHeader ul li a {
-    padding-top: 7.5px;
-    padding-bottom: 9px;
   }
 }
 .box1 header .navContainer nav .linksHeader ul li a:hover {
@@ -450,7 +467,7 @@
 }
 @media only screen and (max-width: 991px) {
   .box1 header .navContainer nav .quotePart .talk {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 .box1 header .navContainer nav .quotePart:hover {
@@ -480,6 +497,26 @@
   top: 15vw;
   z-index: 1;
 }
+@media only screen and (max-width: 1199px) {
+  .box1 header .headerDiscriptionContainer {
+    top: 27vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .box1 header .headerDiscriptionContainer {
+    top: 30vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .box1 header .headerDiscriptionContainer {
+    top: 15vw;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .box1 header .headerDiscriptionContainer {
+    top: 25vw;
+  }
+}
 .box1 header .headerDiscriptionContainer .headerDiscription {
   text-align: center;
 }
@@ -498,6 +535,12 @@
   .box1 header .headerDiscriptionContainer .headerDiscription h2 {
     width: 70%;
     font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription h2 {
+    width: 90%;
+    font-size: 6vw;
   }
 }
 .box1 header .headerDiscriptionContainer .headerDiscription h2 #greenUpperWord {
@@ -523,6 +566,12 @@
     font-size: 4vw;
   }
 }
+@media only screen and (max-width: 575px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription h3 {
+    width: 80%;
+    font-size: 6vw;
+  }
+}
 .box1 header .headerDiscriptionContainer .headerDiscription h3 .greenWord {
   color: #6fa40b;
   font-weight: 700;
@@ -534,12 +583,63 @@
   height: 45px;
   overflow: hidden;
 }
+.box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool1Medium {
+  display: none;
+}
+@media only screen and (max-width: 1199px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool1Medium {
+    display: block;
+    color: #ffffff;
+    font-size: 28px;
+    position: absolute;
+    top: 76%;
+    left: 20%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool1Medium {
+    display: block;
+    color: #ffffff;
+    font-size: 28px;
+    position: absolute;
+    top: 76%;
+    left: 20%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool1Medium {
+    display: none;
+  }
+}
 .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling p {
   color: #ffffff;
+}
+@media only screen and (max-width: 575px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling p {
+    font-size: 3.5vw;
+  }
+}
+.box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling:hover .scroolHover {
+  color: #6fa40b;
+}
+@media only screen and (max-width: 1199px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling {
+    width: 50%;
+    height: 70px;
+    margin-top: 3%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling {
     width: 50%;
+    height: 70px;
+    margin-top: 3%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -547,13 +647,58 @@
     width: 80%;
     overflow: none;
     height: auto;
+    text-shadow: 4px 4px 2px #000000;
   }
 }
 .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling:hover {
   overflow: auto;
 }
+.box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool2Medium {
+  display: none;
+}
+@media only screen and (max-width: 1199px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool2Medium {
+    display: block;
+    color: #ffffff;
+    font-size: 28px;
+    position: absolute;
+    top: 76%;
+    left: 77%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool2Medium {
+    display: block;
+    color: #ffffff;
+    font-size: 28px;
+    position: absolute;
+    top: 76%;
+    left: 77%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #discriptionsScrooling .scrool2Medium {
+    display: none;
+  }
+}
 .box1 header .headerDiscriptionContainer .headerDiscription #mouseContainer {
   margin-top: 1vw;
+}
+@media only screen and (max-width: 1199px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #mouseContainer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #mouseContainer {
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   .box1 header .headerDiscriptionContainer .headerDiscription #mouseContainer {
@@ -568,12 +713,17 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .box1 header .headerDiscriptionContainer .headerDiscription #mouseDot {
-    width: 67px;
+    display: none;
   }
 }
-@media only screen and (max-width: 991px) and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
+  .box1 header .headerDiscriptionContainer .headerDiscription #mouseDot {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
   .box1 header .headerDiscriptionContainer .headerDiscription #mouseDot {
     display: none;
   }
@@ -623,10 +773,73 @@
   -ms-filter: blur(2px) brightness(0.7);
   filter: blur(2px) brightness(0.7);
 }
-@media only screen and (max-width: 767px) {
-  .box1 header .headerImage img {
-    width: 150%;
-    margin-left: -23%;
+
+@media screen and (min-width: 1200px) {
+  .foto1 {
+    display: block;
+  }
+
+  .fotoLarge {
+    display: none;
+  }
+
+  .fotoMedium {
+    display: none;
+  }
+
+  .fotoSmall {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foto1 {
+    display: none;
+  }
+
+  .fotoLarge {
+    display: block;
+  }
+
+  .fotoMedium {
+    display: none;
+  }
+
+  .fotoSmall {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .foto1 {
+    display: none;
+  }
+
+  .fotoLarge {
+    display: none;
+  }
+
+  .fotoMedium {
+    display: block;
+  }
+
+  .fotoSmall {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .foto1 {
+    display: none;
+  }
+
+  .fotoLarge {
+    display: none;
+  }
+
+  .fotoMedium {
+    display: none;
+  }
+
+  .fotoSmall {
+    display: block;
   }
 }
 

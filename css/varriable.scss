@@ -76,9 +76,13 @@ $greenColor:#6fa40b;
 $blackColor:#000000;
 
 $breakpoints: (
+	"big":1200px,
   "large":1199px,
+  "minlarge":992px,
   "medium": 991px,
+  "minmedium":768px,
   "small": 767px,
+  "minsmall":576px,
   "extra-small": 575px
   );
 
@@ -86,6 +90,17 @@ $breakpoints: (
     @if map_has_key($breakpoints, $width){
       $width: map_get($breakpoints,$width);
       @if type ==max{
+        $width: $width - 1px;
+      }
+      @media only screen and (#{$type}-width: $width){
+        @content;
+      }
+      }
+    }
+  @mixin minmq($width,$type:max){
+    @if map_has_key($breakpoints, $width){
+      $width: map_get($breakpoints,$width);
+      @if type ==min{
         $width: $width - 1px;
       }
       @media only screen and (#{$type}-width: $width){
