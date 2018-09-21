@@ -22,4 +22,33 @@ span .black {
 .box2 {
   background-color: #f1ecf2; }
 
+h3 .box2 .bold .green-letters {
+  color: #77a703;
+  font-weight: 900; }
+
+.box2 i {
+  margin-left: 40px; }
+
+h3 .box2 .bold {
+  font-family: "Raleway";
+  font-weight: 900; }
+
+.box2 .col-md-6 {
+  background: #fff; }
+
+.box2 .box-right {
+  background: #f1ecf2; }
+
+h3 .green-letters {
+  color: #77a703;
+  font-family: "Raleway";
+  font-weight: 900; }
+
+h3 .thin-green-letters {
+  font-weight: 300;
+  color: #77a703; }
+
+h3 .black-letters {
+  color: black; }
+
 /*# sourceMappingURL=box2.css.map */

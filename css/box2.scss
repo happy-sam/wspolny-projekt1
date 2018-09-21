@@ -5,10 +5,11 @@ $font-weight:600;
 $green:#77a703;
 $black:#000;
 $font-bold:900;
-$font-family:"Raleway";
+$raleway:"Raleway";
 $margin-left:65px;
 $background:#f1ecf2;
 $inside-box-color:#fff;
+$m-left:40px;
 
 
 
@@ -25,7 +26,7 @@ span .black {
 }
 .border .h3-box2 {
     font-size:$font-size;
-    font-family:$font-family;
+    font-family:$raleway;
     font-weight:$font-weight;
 }
 .border .box2 {
@@ -36,4 +37,33 @@ span .black {
 }
 .box2 {
     background-color:$background;
+}
+h3 .box2 .bold .green-letters {
+    color:$green;
+    font-weight:$font-bold;
+}
+.box2 i {
+    margin-left:$m-left;
+}
+h3 .box2 .bold {
+    font-family:$raleway;
+    font-weight:$font-bold;
+}
+.box2 .col-md-6 {
+    background:#fff;
+}
+.box2 .box-right {
+    background:$background;
+}
+h3 .green-letters {
+    color:$green;
+    font-family:$raleway;
+    font-weight:900;
+}
+h3 .thin-green-letters {
+    font-weight:300;
+    color:$green;
+}
+h3 .black-letters {
+    color:black;
 }
