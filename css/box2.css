@@ -1,9 +1,25 @@
+p {
+  font-size: 10px; }
 
-h1 {
-	background: blue;
-	margin-bottom: 100px;
-}
-h2 {
-	background:red;
-	font-size:6px;
-}
+.icon-box {
+  color: #77a703; }
+
+span .black {
+  color: #000;
+  font-weight: 900; }
+
+.border .h3-box2 {
+  font-size: 12px;
+  font-family: "Raleway";
+  font-weight: 600; }
+
+.border .box2 {
+  background-color: #fff; }
+
+.icon-box {
+  margin-left: 65px; }
+
+.box2 {
+  background-color: #f1ecf2; }
+
+/*# sourceMappingURL=box2.css.map */
