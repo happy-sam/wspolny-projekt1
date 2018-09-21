@@ -2,7 +2,8 @@ p {
   font-size: 10px; }
 
 .icon-box {
-  color: #77a703; }
+  color: #77a703;
+  font-size: 2em; }
 
 span .black {
   color: #000;
@@ -27,14 +28,16 @@ h3 .box2 .bold .green-letters {
   font-weight: 900; }
 
 .box2 i {
-  margin-left: 40px; }
+  margin-left: 28px; }
 
 h3 .box2 .bold {
   font-family: "Raleway";
   font-weight: 900; }
 
-.box2 .col-md-6 {
-  background: #fff; }
+.box2 .col-md-7 {
+  background: #fff;
+  max-width: 250px;
+  height: 200px; }
 
 .box2 .box-right {
   background: #f1ecf2; }
@@ -42,13 +45,31 @@ h3 .box2 .bold {
 h3 .green-letters {
   color: #77a703;
   font-family: "Raleway";
-  font-weight: 900; }
+  font-weight: 900;
+  font-size: 22px; }
 
 h3 .thin-green-letters {
   font-weight: 300;
-  color: #77a703; }
+  color: #77a703;
+  font-size: 22px; }
 
 h3 .black-letters {
   color: black; }
+
+.box-z-czterema-boxami {
+  justify-content: space-evenly; }
+
+h3 .h3-box2 {
+  font-weight: 400; }
+
+.row .space {
+  justify-content: space-evenly; }
+
+.box-lewy-gorny, .box-prawy-gorny {
+  margin-bottom: 13px;
+  margin-top: 40px; }
+
+.border {
+  box-shadow: 2px 2px #aca1a1; }
 
 /*# sourceMappingURL=box2.css.map */

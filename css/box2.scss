@@ -9,7 +9,7 @@ $raleway:"Raleway";
 $margin-left:65px;
 $background:#f1ecf2;
 $inside-box-color:#fff;
-$m-left:40px;
+$m-left:28px;
 
 
 
@@ -19,6 +19,10 @@ p {
 }
 .icon-box {
     color:$green;
+    font-size:2em;
+}
+.icon-box i {
+    
 }
 span .black {
     color:$black;
@@ -49,8 +53,11 @@ h3 .box2 .bold {
     font-family:$raleway;
     font-weight:$font-bold;
 }
-.box2 .col-md-6 {
+.box2 .col-md-7 {
     background:#fff;
+    max-width:250px;
+    height:200px;
+    
 }
 .box2 .box-right {
     background:$background;
@@ -59,11 +66,29 @@ h3 .green-letters {
     color:$green;
     font-family:$raleway;
     font-weight:900;
+    font-size:22px;
 }
 h3 .thin-green-letters {
     font-weight:300;
     color:$green;
+    font-size:22px;
 }
 h3 .black-letters {
     color:black;
+}
+.box-z-czterema-boxami {
+    justify-content:space-evenly;
+}
+h3 .h3-box2 {
+    font-weight:400;
+}
+.row .space {
+    justify-content:space-evenly;
+}
+.box-lewy-gorny, .box-prawy-gorny {
+    margin-bottom:13px;
+    margin-top:40px;
+}
+.border {
+    box-shadow:2px 2px #aca1a1
 }
