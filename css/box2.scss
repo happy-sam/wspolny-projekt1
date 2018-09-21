@@ -1,9 +1,39 @@
+$font-size:12px;
+$font-size-s:10px;
+$font-size-l:18px;
+$font-weight:600;
+$green:#77a703;
+$black:#000;
+$font-bold:900;
+$font-family:"Raleway";
+$margin-left:65px;
+$background:#f1ecf2;
+$inside-box-color:#fff;
 
-h1 {
-	background: blue;
-	margin-bottom: 100px;
+
+
+
+p {
+    font-size: $font-size-s;
 }
-h2 {
-	background:orange;
-	font-size:16px;
+.icon-box {
+    color:$green;
+}
+span .black {
+    color:$black;
+    font-weight:$font-bold;
+}
+.border .h3-box2 {
+    font-size:$font-size;
+    font-family:$font-family;
+    font-weight:$font-weight;
+}
+.border .box2 {
+    background-color:$inside-box-color;
+}
+.icon-box {
+    margin-left:$margin-left;
+}
+.box2 {
+    background-color:$background;
 }
