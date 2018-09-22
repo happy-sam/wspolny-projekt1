@@ -13,7 +13,7 @@
 	margin:0;
 	padding:0;
 	header{
-		height:768px;
+		height:auto;
 		.headerTopContainer{
 			width:100%;
 			display:flex;
@@ -181,7 +181,7 @@
     							width:30px;
     							position:absolute;;
     							top:5px;
-    							right:20px;
+    							left:69%;
     							ul{
     								margin:0;
     								padding: 0;
@@ -193,7 +193,7 @@
     											margin-top: 0px;
     											width:200px;
     											margin-left: -170px;
-    											margin-top: 10%;
+    											margin-top:0%;
 
     										}
     										&:hover .hamburger{
@@ -215,14 +215,18 @@
     										li{
     											display:block;
     											opacity:0;
-    											margin-left:0px;
+    											margin-left:-40px;
     											width:0px;
     											text-align: center;
     											position: relative;
+    											border:2px solid rgba(255,255,255,0);
     											border-radius: 10px;
     											z-index: 3;
     											margin-top: -36px;
     											transition:0.5s;
+    											@include mq('extra-small'){
+													margin-left: -72px;
+    											}
     											&:nth-child(7){
     												background:black;
     											}
@@ -236,10 +240,14 @@
     											a{
     												display: block;
     												width:100%;
+    												height:100%;
     												font-size: 15px;
     												font-weight: 500;
     												text-transform: uppercase;
-    												margin:0;
+    												margin-left:0;
+    												margin-right:0;
+    												margin-bottom: 0;
+    												margin-top:0;
     												padding-top:3%;
     												padding-bottom:3%;
     												border-style: solid;
@@ -653,8 +661,8 @@
 				-webkit-filter: blur(2px) brightness(0.7);
 				-moz-filter: blur(2px) brightness(0.7);
 				-o-filter: blur(2px) brightness(0.7);
-				-ms-filter: blur(2px) brightness(0.7);
-				filter: blur(2px) brightness(0.7);
+				-ms-filter: 'progid:DXImageTransform.Microsoft.MotionBlur(strength=50), progid:DXImageTransform.Microsoft.BasicImage(mirror=1)';
+				filter: Blur(Add=0, Direction=40, Strength=20);
 			}	
 		}
 	}
